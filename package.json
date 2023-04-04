@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://bhishan-mahat.github.io/bhishan's_portfolio",
+  "homepage": "https://bhishan-mahat.github.io/my_portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
