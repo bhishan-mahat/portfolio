@@ -1,0 +1,12 @@
+.footer {
+    background-color: var(--bg-lessdark);
+}
+.footer__wrapper {
+    padding-block: 20px;
+}
+
+@media (min-width: 62.5em) {
+    .footer__wrapper {
+        padding-block: 40px;
+    }
+}

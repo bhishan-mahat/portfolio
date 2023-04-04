@@ -1,0 +1,103 @@
+.contact {
+    background-image: url("../assets/parallax/4.png");
+}
+
+.contact__wrapper {
+    padding-block: 60px;
+}
+
+.contact__headline {
+    margin-block-end: var(--fs-20);
+}
+
+.contact__form {
+    padding-block-start: 20px;
+    max-width: 600px;
+}
+
+
+
+.contact__control {
+    /* outline: 1px dashed gold; */
+    position: relative;
+    margin-block-end: 30px;
+}
+
+.contact__form :nth-child(4) {
+    margin-block-end: 0;
+}
+
+.contact__label {
+    position: absolute;
+    /* outline: 1px solid red; */
+    bottom: 6px;
+    left: 24px;
+    background-color: black;
+    font-size: 1.4rem;
+    line-height: 1.625;
+    padding-inline: 5px;
+    color: rgb(180, 180, 180);
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+
+    transition: all var(--transition);
+}
+
+.message-label {
+    bottom: 16px;
+}
+
+.contact__control input, 
+.contact__control textarea {
+    width: 100%;
+    padding-block: 20px;
+    padding-inline: 24px;
+    font-size: 1rem;
+    line-height: 1.625;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--text-1);
+    background: transparent;
+    color: var(--text-1)
+
+}
+
+.contact__control input:focus-visible,
+.contact__control textarea:focus-visible {
+    outline: none;
+    border: 1px solid var(--cyan-400);
+    border-radius: 5px;
+}
+
+.contact__control input:focus-visible + .contact__label {
+    transform: translateY(-48px);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact__control textarea:focus-visible + .message-label {
+    transform: translateY(-98px);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact__control.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 62.5em) {
+    .contact__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 27.8rem);
+        justify-content: space-between;
+    }
+
+    .contact__text {
+        /* outline: 1px solid red; */
+        align-self: center;
+    }
+
+    .contact__headline {
+        margin-block-end: var(--fs-36);
+    }
+}
